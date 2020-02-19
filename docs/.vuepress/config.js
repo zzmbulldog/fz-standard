@@ -10,43 +10,59 @@ module.exports = {
         lineNumbers: true // 代码块显示行号
     },
     themeConfig: {
-        sidebarDepth: 2,
+        sidebarDepth: 1,
         lastUpdated: 'Last Updated', // 文档更新时间
         // 侧边栏配置
         sidebar: [{
             "children": [
-                "/demo/part1/part1"
+                "/demo/part1/compatibility",
+                "/demo/part1/unity",
+                "/demo/part1/beauty",
+                "/demo/part1/accessibility"
             ],
             "collapsable": false,
-            "title": ""
+            "title": "整体要求说明"
         },
         {
             "children": [
-                "/demo/part2/part2"
+                "/demo/part2/login",
+                "/demo/part2/content"
             ],
             "collapsable": false,
-            "title": ""
+            "title": "页面布局规范"
         },
         {
             "children": [
-                "/demo/part3/part3"
+                "/demo/part3/name",
+                "/demo/part3/icon",
+                "/demo/part3/text"
             ],
             "collapsable": false,
-            "title": ""
+            "title": "页面信息规范"
         },
         {
             "children": [
-                "/demo/part4/part4"
+                "/demo/part4/pageRevert",
+                "/demo/part4/dataValidate",
+                "/demo/part4/dataOperate",
+                "/demo/part4/infoTip",
+                "/demo/part4/specialExplain"
             ],
             "collapsable": false,
-            "title": ""
+            "title": "数据交互规范"
         },
         {
             "children": [
-                "/demo/part5/part5"
+                "/demo/part5/login",
+                "/demo/part5/nav",
+                "/demo/part5/table",
+                "/demo/part5/dialog",
+                "/demo/part5/button",
+                "/demo/part5/form",
+                "/demo/part5/file"
             ],
             "collapsable": false,
-            "title": ""
+            "title": "通用组件规范"
         }
         ]
     }
