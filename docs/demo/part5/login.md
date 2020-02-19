@@ -1,6 +1,6 @@
 # 登录
 
-## 登陆表单
+## 登录表单
 
 ```html
 <form id="form1" method="post">
