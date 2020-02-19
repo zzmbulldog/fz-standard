@@ -18,6 +18,8 @@
 
 大中小弹框的使用方式相同，仅需要按照标准修改参数width和height，以下附上大弹框的代码示例：
 
+![An image](../../images/bsWindow.png)
+
 ```javascript
 bsWindow(url, title, {
         width: "1100",
@@ -52,11 +54,15 @@ bsWindow(url, title, {
 
 不带按钮提示框使用示例如下：
 
+![An image](../../images/msgAuto.png)
+
 ```javascript
 $.MsgBox.Alert_auto("请选择一个案件！");
 ```
 
 带按钮提示框使用示例如下：
+
+![An image](../../images/msgConfirm.png)
 
 ```javascript
 $.MsgBox.Confirm("提示", "是否撤销并案?", function() {});

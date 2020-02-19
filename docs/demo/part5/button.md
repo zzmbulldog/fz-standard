@@ -17,20 +17,18 @@
 ### 按钮样式
 
 1. 形式：采用图标+文字形式
-
 2. 大小：easyui-button默认大小
-
 3. 配色：以#4381e6背景色，#ffffff字体色为主
-
 4. 间距：按钮内图标和文字间距5px，每个按钮之间的间距5px，两字中间距两个空格，三字及以上文字之间无间距
-
 5. 使用方法举例：
 
-   ```html
-   <button class="easyui-linkbutton" onclick="click();">
-   	<i class="iconfont icon-lianxiang"></i> 登&nbsp;&nbsp;记
-   </button>
-   ```
+```html
+<button class="easyui-linkbutton" onclick="click();">
+	<i class="iconfont icon-lianxiang"></i> 登&nbsp;&nbsp;记
+</button>
+```
+
+
 
 ![An image](../../images/buttonInListPage.png)
 
