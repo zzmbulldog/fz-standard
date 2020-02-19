@@ -4,7 +4,15 @@
 
 图标 + 文字 + 类型
 
+![An image](../../images/upload.png)
 
+:::tip
+
+上传成功后，应显示文件名，鼠标悬浮至文件名时应有对操作文件选项面板
+
+:::
+
+![An image](../../images/uploadsucc.png)
 
 ## 示例代码
 

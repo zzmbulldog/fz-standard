@@ -18,7 +18,7 @@
 
 #### Input 输入框
 
-![1582103904223](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\1582103904223.png)
+![An image](../../images/input.png)
 
 ```html
 <input class="easyui-textbox" name="name1" id="" /> 
@@ -26,7 +26,7 @@
 
 #### Combobox 组合框
 
-![1582103810759](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\1582103810759.png)
+![An image](../../images/combobox.png)
 
 ```html
 <input name="11" id="sex" class="easyui-combobox" 
@@ -35,7 +35,7 @@
 
 #### Datebox 日期框
 
-![1582103782655](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\1582103782655.png)
+![An image](../../images/datebox.png)
 
 ```html
 <div>
@@ -47,7 +47,7 @@
 
 #### 单选按钮
 
-![1582103651744](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\1582103651744.png)
+![An image](../../images/radio.png)
 
 ```html
 <span>是否经过合法性审查：</span>
@@ -57,7 +57,7 @@
 
 #### 复选按钮
 
-![1582103496663](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\1582103496663.png)
+![An image](../../images/checkbox.png)
 
 ```html
 <span>履行程序情况：</span>

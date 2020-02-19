@@ -2,6 +2,8 @@
 
 ## 登录表单
 
+![An image](../../images/login.png)
+
 ```html
 <form id="form1" method="post">
     <div class="box">
@@ -26,11 +28,5 @@
         </span>
     </div>
 </form>
-```
-
-```javascript
-function refreshCode(){
-    $("#vimage").attr("src",contextPath+"/verifyCode/generate.action?rand="+new Date().getTime());
-                    }
 ```
 

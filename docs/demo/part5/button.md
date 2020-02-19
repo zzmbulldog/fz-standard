@@ -32,7 +32,7 @@
    </button>
    ```
 
-【配图——标注颜色大小和间距】
+![An image](../../images/buttonInListPage.png)
 
 ## 二级功能页按钮
 
@@ -89,7 +89,7 @@
 <input type="button" onclick="push();" class="btn-win-white" title="提交" />
 ```
 
-【配图——标注按钮类型颜色大小和间距】
+![An image](../../images/buttonInContentPage.png)
 
 ## 弹框按钮
 
