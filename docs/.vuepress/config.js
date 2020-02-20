@@ -11,6 +11,12 @@ module.exports = {
         // 侧边栏配置
         sidebar: [{
             "children": [
+                "/demo/introduce/introduce"
+            ],
+            "collapsable": false,
+            "title": "介绍"
+        },{
+            "children": [
                 "/demo/part1/compatibility",
                 "/demo/part1/unity",
                 "/demo/part1/beauty",
@@ -59,6 +65,13 @@ module.exports = {
             ],
             "collapsable": false,
             "title": "通用组件规范"
+        },
+        {
+            "children": [
+                "/demo/summary/summary"
+            ],
+            "collapsable": false,
+            "title": "写在最后"
         }
         ]
     }
