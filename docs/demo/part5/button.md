@@ -20,7 +20,7 @@
 - 大小：easyui-button默认大小
 - 配色：以#4381e6背景色，#ffffff字体色为主
 - 间距：按钮内图标和文字间距5px，每个按钮之间的间距5px
-- 使用方法举例：
+### 使用举例：
 
 ```html
 <button class="easyui-linkbutton" onclick="click();">
@@ -73,7 +73,8 @@
 
 - 字体大小：16px
 - 边框弧度：5px
-- 使用示例：
+  
+### 使用示例：
 
 ```html
 <input type="button" onclick="reset();" class="btn-win-white" title="重置" /> 

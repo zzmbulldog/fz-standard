@@ -1,14 +1,15 @@
 ---
 home: true
 heroImage: /favicon.ico
-actionText: 快速上手 →
+actionText: 开启 →
+tagline: 为了打磨更完美的产品
 actionLink: /demo/part1/compatibility.md
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
-footer: MIT Licensed | Copyright © 2018-present xxxxxx
+- title: 用户至上
+  details: 为了更好地产品服务用户。
+- title: 增加协同性
+  details: 让团队成员在日常工作中有据可依。
+- title: 减少无效返工
+  details: 通过规范制定一套统一标准。
+footer: MIT Licensed | Copyright © Content by 北大软件法治部门. Thanks for Vue.
 ---

@@ -22,8 +22,8 @@
 
 ```javascript
 bsWindow(url, title, {
-        width: "1100",
-        height: "600",
+        width: "500",
+        height: "300",
         buttons: [{
                 name: "保存",
                 classStyle: "btn-alert-blue"
@@ -58,7 +58,7 @@ bsWindow(url, title, {
 ![An image](../../images/msgAuto.png)
 
 ```javascript
-$.MsgBox.Alert_auto("请选择一个案件！");
+$.MsgBox.Alert_auto("未选中任何记录！");
 ```
 
 - 带按钮提示框使用示例如下：
@@ -67,6 +67,6 @@ $.MsgBox.Alert_auto("请选择一个案件！");
 ![An image](../../images/msgConfirm.png)
 
 ```javascript
-$.MsgBox.Confirm("提示", "是否撤销并案?", function() {});
+$.MsgBox.Confirm("提示", "感谢您使用，再见！确定要注销吗？", function() {});
 ```
 
