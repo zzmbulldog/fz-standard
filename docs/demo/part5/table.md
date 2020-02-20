@@ -2,7 +2,7 @@
 
 ## 表头
 
-表头文字居中。
+表头文字居中
 
 ## 表身
 
@@ -194,6 +194,103 @@ function doInit() {
 
 ## 代码规范
 
+### 基础表格
+
+![An image](../../images/baseTable.png)
+
+:::details 点击查看基础表格的代码规范
+
+```html
+<table id="datagrid"></table>
+```
+
+```javascript
+/**
+ * @description 初始化 非弹出表格(包含规范化后部分样式)
+ * @param {String} actionUrl 接口的url
+ * @param {String} columns 表格列的设置信息
+ * @param {String} isPagination 是否分页
+ * @param {String} isRowNumber 是否显示行号
+ * @param {String} domId 表格table的选择器ID
+ */
+function doInitBaseTable(actionUrl, columns, isPagination, isRowNumber, domId) {
+    var datagrid = $('#' + domId).datagrid({
+        url: actionUrl || "",
+        pagination: isPagination,
+        view: window.EASYUI_DATAGRID_NONE_DATA_TIP, // 加载样式(查询不到数据)
+        border: false,
+        striped: true,
+        idField: 'uuid', // 主键列
+        pageSize: 20,
+        pageList: [5, 10, 20, 30, 40, 50],
+        rownumbers: isRowNumber, // 行号
+        SingleSelect: true, // 是否选中多条
+        nowrap: true, // 数据长度超出列宽时将会自动截取。
+        fitColumns: true, // 列是否进行自动宽度适应
+        scrollbarSize: 0,
+        columns: columns
+    });
+    return datagrid;
+}
+
+var columns = [
+    [{
+        field: 'smsSid',
+        title: '',
+        width: 50,
+        checkbox: true
+    }, {
+        field: 'moduleNoDesc',
+        title: '类型',
+        width: 30,
+        align: 'center'
+    }, {
+        field: 'content',
+        title: '消息内容',
+        width: 150,
+        align: 'center'
+    }, {
+        field: 'sendTimeDesc',
+        title: '发送时间',
+        width: 50,
+        align: 'center'
+    }, {
+        field: 'fromUser',
+        title: '发送人',
+        width: 30,
+        align: 'center'
+    }, {
+        field: '_manage',
+        title: '操作',
+        width: 40,
+        align: 'center',
+        formatter: function (value, rowData, rowIndex) {
+            var opt ="<i class='fa fa-eye blueColor' onclick=\"viewDetail('"+rowData.smsSid+"')\" value='详情'></i>";
+            opt = opt +
+                "&nbsp;&nbsp;<i class='fa fa-trash-o redColor' value='删除' onclick=\"deleteSmsList('"+rowData.smsSid+"')\"></i>";
+            return opt;
+        }
+    }]
+];
+var datagrid;
+
+function doInit() {
+    datagrid = doInitBaseTable(contextPath + '/sms/getSmsBoxDatas.action', columns, true, true, "datagrid");
+}
+```
+
+:::
+
+### 可搜索表格
+
+![An image](../../images/searchTable.jpg)
+
+::: details 点击查看可搜索表格的代码规范
+
+```html
+<table id="datagrid" fit="true"></table>
+```
+
 ```javascript
 /**
  * @description 初始化有查询条件 非弹出表格(包含规范化后部分样式)
@@ -269,6 +366,7 @@ var datagrid;
 
 function doInit() {
     var param = {};
+    //以下是查询条件
     param["moduleNo"] = $("#classify").val();
     param["remindFlag"] = $("#remindFlag").val();
     datagrid = doInitSearchTable(contextPath + '/sms/getSmsBoxDatas.action', columns, true, true, "datagrid", param);
@@ -283,3 +381,4 @@ function query() {
 }
 ```
 
+:::

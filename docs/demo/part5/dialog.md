@@ -16,7 +16,7 @@
 
 ### 大/中/小弹框
 
-大中小弹框的使用方式相同，仅需要按照标准修改参数width和height，以下附上大弹框的代码示例：
+大中小弹框的使用方式相同，仅需要按照标准修改参数width和height，以下附上小弹框的代码示例：
 
 ![An image](../../images/bsWindow.png)
 
@@ -52,7 +52,8 @@ bsWindow(url, title, {
 
 ### 提示性弹框
 
-不带按钮提示框使用示例如下：
+- 不带按钮提示框使用示例如下：
+
 
 ![An image](../../images/msgAuto.png)
 
@@ -60,7 +61,8 @@ bsWindow(url, title, {
 $.MsgBox.Alert_auto("请选择一个案件！");
 ```
 
-带按钮提示框使用示例如下：
+- 带按钮提示框使用示例如下：
+
 
 ![An image](../../images/msgConfirm.png)
 
