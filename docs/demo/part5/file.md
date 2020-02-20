@@ -2,7 +2,7 @@
 
 ## 控件格式
 
-图标 + 文字 + 类型
+图标 + “上传附件”+ 文件类型，举个:chestnut:
 
 ![An image](../../images/upload.png)
 

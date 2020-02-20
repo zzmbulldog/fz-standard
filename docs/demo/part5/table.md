@@ -57,7 +57,7 @@ toolbar区域的内容为本页标题栏以及查询条件。查询条件统一�
 
 :::
 
-#### 前台代码
+::: details 点击查看代码
 
 ```html
 <span class="optionarea">
@@ -65,10 +65,6 @@ toolbar区域的内容为本页标题栏以及查询条件。查询条件统一�
 	<ul class="panList"></ul>
 </span>
 ```
-
-#### 后台代码
-
-::: details 点击查看代码
 
 ```js
 //可选项列表(仅列举一部分)
@@ -222,7 +218,7 @@ function doInitBaseTable(actionUrl, columns, isPagination, isRowNumber, domId) {
         striped: true,
         idField: 'uuid', // 主键列
         pageSize: 20,
-        pageList: [5, 10, 20, 30, 40, 50],
+        pageList: [10, 20, 50, 100],
         rownumbers: isRowNumber, // 行号
         SingleSelect: true, // 是否选中多条
         nowrap: true, // 数据长度超出列宽时将会自动截取。
@@ -309,7 +305,7 @@ function doInitSearchTable(actionUrl, columns, isPagination, isRowNumber, domId,
         singleSelect: true,
         pagination: isPagination,
         pageSize: 20,
-        pageList: [5, 10, 20, 30, 40, 50],
+        pageList: [10, 20, 50, 100],
         fitColumns: true,
         scrollbarSize: 0, //规定列表滚动条宽度为0
         nowrap: true,
@@ -382,3 +378,4 @@ function query() {
 ```
 
 :::
+
